@@ -1,0 +1,84 @@
+#grid {
+    display: grid;
+    grid-template-areas:    'a aa aaa'
+                            'b bb bbb'
+                            'c cc ccc';
+    grid-template-columns: 180px auto 180px;
+    grid-template-rows: 35px auto auto auto;
+}
+/*nustatomos ribos*/
+.gra1 {
+    grid-area: a;
+}
+.gra2 {
+    grid-area: aa;
+}
+.gra3 {
+    grid-area: aaa;
+}
+.gra4 {
+    grid-area: b;
+
+}
+.gra5 {
+    grid-area: bb;
+}
+.gra6 {
+    grid-area: bbb;
+}
+.gra7 {
+    grid-area: c;
+}
+.gra8 {
+    grid-area: cc;
+}
+.gra9 {
+    grid-area: ccc;
+}
+
+/**/
+/*Grido spalvos*/
+.gra1,
+.gra2,
+.gra3 {
+    background-color: #3d3d3d ;
+    opacity: 0.9;
+}
+
+/**/
+/*Grido formatavimas*/
+.gra2 a {
+    opacity: 1;
+    color: #f7f7f7;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.gra2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+body {
+    background-image: url("img/bg05.jpg");
+    background-size: cover;
+}
+.gra1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.gra5 {
+    background-color: #f7f7f7;
+    opacity: 0.9;
+    box-shadow: -2px 0px 5px black;
+    padding: 10px;
+}
+a:hover {
+    COLOR: darkgray;
+    TEXT-DECORATION: none;
+}
