@@ -4,7 +4,7 @@
                             'b bb bbb'
                             'c cc ccc';
     grid-template-columns: 180px auto 180px;
-    grid-template-rows: 35px auto auto auto;
+    grid-template-rows: 35px 1fr 30px  ;
     grid-row-gap: 10px;
 }
 /*nustatomos ribos*/
@@ -41,41 +41,81 @@
 
 #smallgrid {
     display: grid;
-    grid-template-areas: '. sg1 sg2 sg3 sg4 .';
-    grid-template-columns: auto auto auto auto;
+    grid-template-areas:  ' sg1   sg2  sg3 sg4 '
+                          ' sg11 sg22 sg33 sg44 ';
+    grid-template-columns: auto auto  auto auto;
     grid-column-gap: 5px;
+    grid-row-gap: 10px;
 
 }
 .sgrid1{
     grid-area: sg1;
     background-color: #f7f7f7;
     border-radius: 2px;
-    box-shadow: -2px 1px 5px darkgray;
+    /*box-shadow: -2px 1px 5px darkgray;*/
     padding: 10px;
 
 }
+
+.sgrid11{
+    grid-area: sg11;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    /*box-shadow: -2px 1px 5px darkgray;*/
+    padding: 10px;
+
+}
+
 .sgrid2{
     grid-area: sg2;
     background-color: #f7f7f7;
     border-radius: 2px;
-    box-shadow: -2px 1px 5px darkgray;
+    /*box-shadow: -2px 1px 5px darkgray;*/
     padding: 10px;
 
 }
+.sgrid22{
+    grid-area: sg22;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    /*box-shadow: -2px 1px 5px darkgray;*/
+    padding: 10px;
+
+}
+
+
 .sgrid3 {
     grid-area: sg3;
     background-color: #f7f7f7;
     border-radius: 2px;
-    box-shadow: -2px 1px 5px darkgray;
+    /*box-shadow: -2px 1px 5px darkgray;*/
+    padding: 10px;
+}
+.sgrid33 {
+    grid-area: sg33;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    /*box-shadow: -2px 1px 5px darkgray;*/
     padding: 10px;
 
 }
+
+
 .sgrid4 {
     grid-area: sg4;
     background-color: #f7f7f7;
     border-radius: 2px;
-    box-shadow: -2px 1px 5px darkgray;
+    /*box-shadow: -2px 1px 5px darkgray;*/
     padding: 10px;
+
+}
+.sgrid44 {
+    grid-area: sg44;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    /*box-shadow: -2px 1px 5px darkgray;*/
+    padding: 10px;
+
 }
 
 
@@ -83,7 +123,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    }
+.sgrid11, .sgrid22, .sgrid33, .sgrid44 {
+    padding: 10px;
+    text-align: center;
 }
+.sdw, .sdw1, .sdw2{
+    box-shadow: -2px 1px 5px darkgray;
+}
+/*.sdw1 {*/
+/*    margin-left: 50px;*/
+/*}*/
+/*.sdw2 {*/
+/*    margin-right: 50px;*/
+/*}*/
+
+/**/
+
 /*Grido spalvos*/
 .gra1,
 .gra2,
@@ -127,6 +183,9 @@ body {
     box-shadow: -2px 0px 5px black;
     padding: 10px;
     border-radius: 3px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
 
 }
 a:hover {
@@ -148,4 +207,17 @@ a:hover {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+.bnr {
+height: 400px;
+    width: 100%;
+    background-color: darkgray;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    border-radius: 3px;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(175, 175, 175, 175.75), rgba(0, 0, 0, 0));
 }
