@@ -57,7 +57,6 @@
     padding: 10px;
 
 }
-
 .sgrid11{
     grid-area: sg11;
     background-color: #f7f7f7;
@@ -66,7 +65,6 @@
     padding: 10px;
 
 }
-
 .sgrid2{
     grid-area: sg2;
     background-color: #f7f7f7;
@@ -83,8 +81,6 @@
     padding: 10px;
 
 }
-
-
 .sgrid3 {
     grid-area: sg3;
     background-color: #f7f7f7;
@@ -100,8 +96,6 @@
     padding: 10px;
 
 }
-
-
 .sgrid4 {
     grid-area: sg4;
     background-color: #f7f7f7;
@@ -118,8 +112,6 @@
     padding: 10px;
 
 }
-
-
 .sgrid1, .sgrid2, .sgrid3, .sgrid4 {
     display: flex;
     align-items: center;
