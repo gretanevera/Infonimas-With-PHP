@@ -34,16 +34,19 @@ $(document).ready(function () {
     });
 });
 
-//Fade-in ir fade-out menu
+//Fade-in ir fade-out menu /sugedo transition/ veikia su z index
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
-            $(".sidenav").css({"opacity": "1"});
+            $(".sidenav").css({"opacity": "1",}).css({"z-index" : "2"});
         } else {
-            $(".sidenav").css({"opacity": "0"});
+            $(".sidenav").css({"opacity": "0", }).css({"z-index" : "-2"});
         }
     })
 });
+
+
+
 
 
 // // Paslėpti linkus kol op < 0.5>

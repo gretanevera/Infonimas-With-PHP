@@ -222,6 +222,7 @@ hr {
 /**/
 .sidenav {
     opacity: 0;
+    /*display: none;*/
     width: auto;
     position: fixed;
     z-index: 2;
@@ -235,7 +236,7 @@ hr {
     margin-left: 50px;
     border-radius: 20px;
     box-shadow: -2px 0px 5px grey;
-    transition: 0.5s;
+    transition: 1s;
 
 }
 .sidenav a {
