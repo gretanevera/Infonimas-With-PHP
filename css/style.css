@@ -252,3 +252,13 @@ hr {
 textarea {
     border-radius: 4px;
 }
+div[class^="menu"] {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 2px solid darkgrey;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: rgba(0,0,0,0.33);
+}
