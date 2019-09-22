@@ -253,12 +253,13 @@ textarea {
     border-radius: 4px;
 }
 div[class^="menu"] {
-    display: inline-block;
+    margin: 15px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
-    width: 100px;
-    border: 2px solid darkgrey;
-    padding: 10px;
-    margin: 10px;
+    width: 150px;
+    border: 1px solid darkgrey;
     border-radius: 2px;
-    box-shadow: rgba(0,0,0,0.33);
+    box-shadow: -2px 0px 5px #383838;
 }

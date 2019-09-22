@@ -6,7 +6,7 @@ $(document).ready(function(){
         //replace with html with modified divs name
         file = file.replace('menu-', 'menu/') + ".html";
         $("main").load(file);
-        console.log(file);
+        // console.log(file);
     })
 });
 
