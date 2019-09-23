@@ -1,11 +1,7 @@
-
-
-
-
-$(document).ready(function(){
+$(document).ready(function () {
     $('.sidenav a, .gra2 a').click(function () { /* only to chosen tags, this function will apply*/
-         let target = this.className; /*the link class we click. p.s. it will only show the name, without class or id indicators (. or #)*/
-         target = '.'+ target; /* adding class indicators*/
+        let target = this.className; /*the link class we click. p.s. it will only show the name, without class or id indicators (. or #)*/
+        target = '.' + target; /* adding class indicators*/
         let locale = target + '1'; /*variable that describes the div this  functions is going to scroll to: the div is name the same as target, just has number 1 at the end, so we add it manually*/
         // console.log(target, locale);
         //Script by Sayyed Salman
@@ -18,7 +14,7 @@ $(document).ready(function(){
                 //it takes 2 parameters : (x axis cordinate, y axis cordinate);
             });
         });
-      });
+    });
 });
 
 
@@ -26,9 +22,9 @@ $(document).ready(function(){
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 40) {
-            $(".sidenav").css({"opacity": "1",}).css({"z-index" : "2"});
+            $(".sidenav").css({"opacity": "1",}).css({"z-index": "2"});
         } else {
-            $(".sidenav").css({"opacity": "0", }).css({"z-index" : "-2"});
+            $(".sidenav").css({"opacity": "0",}).css({"z-index": "-2"});
         }
     })
 });

@@ -1,8 +1,6 @@
 #grid {
     display: grid;
-    grid-template-areas:    'a aa aaa'
-                            'b bb bbb'
-                            'c cc ccc';
+    grid-template-areas: 'a aa aaa' 'b bb bbb' 'c cc ccc';
     grid-template-columns: 180px auto 180px;
     grid-template-rows: 35px 1fr 30px;
     grid-row-gap: 10px;
@@ -10,32 +8,41 @@
 
 
 }
+
 /*nustatomos ribos*/
 .gra1 {
     grid-area: a;
 }
+
 .gra2 {
     grid-area: aa;
 }
+
 .gra3 {
     grid-area: aaa;
 }
+
 .gra4 {
     grid-area: b;
 
 }
+
 .gra5 {
     grid-area: bb;
 }
+
 .gra6 {
     grid-area: bbb;
 }
+
 .gra7 {
     grid-area: c;
 }
+
 .gra8 {
     grid-area: cc;
 }
+
 .gra9 {
     grid-area: ccc;
 }
@@ -44,14 +51,14 @@
 
 #smallgrid {
     display: grid;
-    grid-template-areas:  ' sg1   sg2  sg3 sg4 '
-                          ' sg11 sg22 sg33 sg44 ';
-    grid-template-columns: auto auto  auto auto;
+    grid-template-areas: ' sg1   sg2  sg3 sg4 ' ' sg11 sg22 sg33 sg44 ';
+    grid-template-columns: auto auto auto auto;
     grid-column-gap: 5px;
     grid-row-gap: 10px;
 
 }
-.sgrid1{
+
+.sgrid1 {
     grid-area: sg1;
     background-color: #f7f7f7;
     border-radius: 2px;
@@ -59,7 +66,8 @@
     padding: 10px;
 
 }
-.sgrid11{
+
+.sgrid11 {
     grid-area: sg11;
     background-color: #f7f7f7;
     border-radius: 2px;
@@ -67,7 +75,8 @@
     padding: 10px;
 
 }
-.sgrid2{
+
+.sgrid2 {
     grid-area: sg2;
     background-color: #f7f7f7;
     border-radius: 2px;
@@ -75,7 +84,8 @@
     padding: 10px;
 
 }
-.sgrid22{
+
+.sgrid22 {
     grid-area: sg22;
     background-color: #f7f7f7;
     border-radius: 2px;
@@ -83,6 +93,7 @@
     padding: 10px;
 
 }
+
 .sgrid3 {
     grid-area: sg3;
     background-color: #f7f7f7;
@@ -90,6 +101,7 @@
     /*box-shadow: -2px 1px 5px darkgray;*/
     padding: 10px;
 }
+
 .sgrid33 {
     grid-area: sg33;
     background-color: #f7f7f7;
@@ -98,6 +110,7 @@
     padding: 10px;
 
 }
+
 .sgrid4 {
     grid-area: sg4;
     background-color: #f7f7f7;
@@ -106,6 +119,7 @@
     padding: 10px;
 
 }
+
 .sgrid44 {
     grid-area: sg44;
     background-color: #f7f7f7;
@@ -114,11 +128,13 @@
     padding: 10px;
 
 }
+
 .sgrid1, .sgrid2, .sgrid3, .sgrid4 {
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+}
+
 .sgrid11, .sgrid22, .sgrid33, .sgrid44 {
     padding: 10px;
     text-align: center;
@@ -133,7 +149,7 @@
 .gra1,
 .gra2,
 .gra3 {
-    background-color: #3d3d3d ;
+    background-color: #3d3d3d;
     opacity: 0.9;
 }
 
@@ -145,28 +161,34 @@
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     TEXT-DECORATION: none;
+    padding-right: 3px;
 }
-.gra2 {
+
+.mmenu {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 8px;
 
 }
+
 body {
     background-image: url("../img/bg05.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .gra1 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+
 .gra5 {
     background-color: #f7f7f7;
     opacity: 1;
@@ -178,13 +200,16 @@ body {
     text-align: center;
 
 }
+
 a:hover {
     COLOR: darkgray;
     TEXT-DECORATION: none;
 }
+
 a:visited {
     TEXT-DECORATION: none;
 }
+
 a:active {
     TEXT-DECORATION: none;
 }
@@ -192,8 +217,9 @@ a:active {
 .gra8,
 .gra7,
 .gra9 {
-    background-color: #3d3d3d ;
+    background-color: #3d3d3d;
 }
+
 .gra8 {
     opacity: 1;
     color: #f7f7f7;
@@ -204,21 +230,24 @@ a:active {
     align-items: center;
     justify-content: center;
 }
+
 .bnr, .gallery1 {
-height: 400px;
+    height: 400px;
     width: 100%;
     background-color: darkgray;
     /*shadow*/
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
     /*----*/
     border-radius: 3px;
 }
+
 hr {
     border: 0;
     height: 2px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(175, 175, 175, 175.75), rgba(0, 0, 0, 0));
 }
+
 /**/
 .sidenav {
     opacity: 0;
@@ -229,9 +258,8 @@ hr {
     top: 20px;
     left: 10px;
     overflow-x: hidden;
-    padding: 5px 0px;
-    padding-right: 10px;
-    background-color: #3d3d3d ;
+    padding: 5px 10px 5px 0px;
+    background-color: #3d3d3d;
     margin-top: 100px;
     margin-left: 50px;
     border-radius: 20px;
@@ -239,6 +267,7 @@ hr {
     transition: 1s;
 
 }
+
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -249,12 +278,14 @@ hr {
     z-index: 2;
 
 }
+
 textarea {
     border-radius: 4px;
 }
+
 div[class^="menu"] {
     margin: 15px;
-    display:inline-flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 100px;
@@ -262,4 +293,83 @@ div[class^="menu"] {
     border: 1px solid darkgrey;
     border-radius: 2px;
     box-shadow: -2px 0px 5px #383838;
+}
+
+/**/
+
+label {
+    font-size: 26px;
+    display: none;
+    width: 26px;
+    float: right;
+    margin: 0 50px 0 0;
+    color: whitesmoke;
+}
+
+#toggle {
+    display: none;
+    color: #f7f7f7;
+}
+
+.top2 {
+    display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    #grid {
+        grid-template-columns: auto 80% auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mmenu {
+        text-align: center;
+        width: 300px;
+        display: none;
+        margin-left: 50%;
+        margin-top: -10px;
+    }
+
+    .gra1 a {
+        display: none;
+    }
+
+    .mmenu a {
+        display: block;
+        /*border-bottom: 1px solid whitesmoke;*/
+        margin: 0;
+        background-color: #3d3d3d;
+    }
+
+    .mmenu .contk {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    .top2 {
+        display: inline-block;
+        z-index: 2;
+        margin-top: 8px;
+    }
+
+    #toggle:checked + .mmenu {
+        display: block;
+        float: right;
+
+    }
+    .sidenav{
+        display: none;
+        z-index: -2;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #grid {
+        grid-template-columns: auto 95% auto;
+    }
 }
