@@ -7,7 +7,7 @@ $(document).ready(function () {
         file = file.replace('menu-', 'menu/') + ".html";
         //load the god damn thing
         $("main").load(file);
-        // console.log(file);
+        console.log(file);
     })
 });
 
