@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 #grid {
     display: grid;
     grid-template-areas: 'a aa aaa' 'b bb bbb' 'c cc ccc';
@@ -49,13 +51,14 @@
 
 /**/
 
+
 #smallgrid {
     display: grid;
     grid-template-areas: ' sg1   sg2  sg3 sg4 ' ' sg11 sg22 sg33 sg44 ';
     grid-template-columns: auto auto auto auto;
     grid-column-gap: 5px;
     grid-row-gap: 10px;
-
+    padding-left: 10px;
 }
 
 .sgrid1 {
@@ -142,6 +145,9 @@
 
 .sdw, .sdw1, .sdw2 {
     box-shadow: -2px 1px 5px darkgray;
+    /*width: 20%;*/
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -193,10 +199,10 @@ body {
     background-color: #f7f7f7;
     opacity: 1;
     box-shadow: -2px 0px 5px #383838;
-    padding: 10px;
+    /*padding: 10px;*/
     border-radius: 3px;
-    padding-left: 50px;
-    padding-right: 50px;
+    /*padding-left: 25px;*/
+    /*padding-right: 25px;*/
     text-align: center;
 
 }
@@ -231,17 +237,20 @@ a:active {
     justify-content: center;
 }
 
-.bnr, .gallery1 {
-    height: 400px;
-    width: 100%;
-    background-color: darkgray;
-    /*shadow*/
-    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-    /*----*/
-    border-radius: 3px;
+.txt, .am1, .mok_ist1, .volunt1 p {
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
+/**/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**/
 hr {
     border: 0;
     height: 2px;
@@ -295,81 +304,128 @@ div[class^="menu"] {
     box-shadow: -2px 0px 5px #383838;
 }
 
+
 /**/
 
 label {
-    font-size: 26px;
-    display: none;
-    width: 26px;
-    float: right;
-    margin: 0 50px 0 0;
-    color: whitesmoke;
+font-size: 26px;
+display: none;
+width: 26px;
+float: right;
+margin: 0 50px 0 0;
+color: whitesmoke;
 }
 
 #toggle {
-    display: none;
-    color: #f7f7f7;
+display: none;
+color: #f7f7f7;
 }
 
 .top2 {
-    display: none;
+display: none;
 }
 
 @media only screen and (max-width: 1100px) {
     #grid {
-        grid-template-columns: auto 80% auto;
-    }
+    grid-template-columns: auto 80% auto;
 }
+    .bnr, .am1, .mok_ist1, .volunt1 p {
+        padding-right: 50px;
+        padding-left: 50px;
+} }
 
 @media only screen and (max-width: 750px) {
+    #smallgrid{
+    display: inline-block;
+}
     label {
-        display: block;
-        cursor: pointer;
-    }
+    display: block;
+    cursor: pointer;
+}
 
     .mmenu {
-        text-align: center;
-        width: 300px;
-        display: none;
-        margin-left: 50%;
-        margin-top: -10px;
-    }
+    text-align: center;
+    width: 300px;
+    display: none;
+    margin-left: 50%;
+    margin-top: -10px;
+}
 
     .gra1 a {
-        display: none;
-    }
+    display: none;
+}
 
     .mmenu a {
-        display: block;
-        /*border-bottom: 1px solid whitesmoke;*/
-        margin: 0;
-        background-color: #3d3d3d;
-    }
+    display: block;
+    /*border-bottom: 1px solid whitesmoke;*/
+    margin: 0;
+    background-color: #3d3d3d;
+}
 
     .mmenu .contk {
-        border-bottom-left-radius: 3px;
-        border-bottom-right-radius: 3px;
-    }
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
 
     .top2 {
-        display: inline-block;
-        z-index: 2;
-        margin-top: 8px;
-    }
+    display: inline-block;
+    z-index: 2;
+    margin-top: 8px;
+}
 
     #toggle:checked + .mmenu {
-        display: block;
-        float: right;
+    display: block;
+    float: right;
 
-    }
-    .sidenav{
-        display: none;
-        z-index: -2;
+}
+
+    .sidenav {
+    display: none;
+    z-index: -2;
+}
+    .txt, .am1, .mok_ist1, .volunt1 p {
+        padding-right: 25px;
+        padding-left: 25px;
     }
 }
 
 @media only screen and (max-width: 500px) {
     #grid {
-        grid-template-columns: auto 95% auto;
-    }
+    grid-template-columns: auto 95% auto;
+}
+    .txt .am1, .mok_ist1, .volunt1 p {
+        padding-right: 10px;
+        padding-left: 10px;
+}
+}
+
+.infonimas, .moto {
+    font-family: 'Montserrat', sans-serif;
+    color: #f7f7f7;
+    display: flex;
+   justify-content: center;
+
+
+
+}
+.infonimas {
+    font-size: 50px;
+    text-decoration: underline #f7f7f7;
+    margin-top: 20%;
+}
+
+.moto {
+    font-size: 30px;
+}
+.bnr {
+    all: initial;
+    width: 100%;
+    height: 500px;
+    background-color: #3d3d3d;
+    display: inline-block;
+    /*margin-right: -50px;*/
+    /*margin-left: -50px;*/
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+
 }
