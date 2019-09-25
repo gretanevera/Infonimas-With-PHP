@@ -10,7 +10,6 @@
 
 
 }
-
 /*nustatomos ribos*/
 .gra1 {
     grid-area: a;
@@ -51,6 +50,7 @@
 
 /**/
 
+/**/
 
 #smallgrid {
     display: grid;
@@ -294,14 +294,14 @@ textarea {
 
 div[class^="menu"] {
     margin: 15px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
     height: 100px;
     width: 150px;
     border: 1px solid darkgrey;
     border-radius: 2px;
     box-shadow: -2px 0px 5px #383838;
+    cursor: pointer;
+    /*padding-top: 30px;*/
+      float: left;
 }
 
 
@@ -426,3 +426,19 @@ display: none;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("/img/ppl.jpg");
     background-position: center;
  }
+.inmtxt{
+    /*background: grey;*/
+    height: 70px;
+    width: 120px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.inception {
+    display: inline-block;
+    align-self: center;
+   justify-content: center;
+}
