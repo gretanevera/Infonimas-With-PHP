@@ -10,6 +10,8 @@ $(document).ready(function () {
         console.log(file);
     })
 });
+
+
 $(document).ready (function(){
     $(".inception>div").click(function () {
         $(".eltexto").remove();
