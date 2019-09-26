@@ -1,18 +1,20 @@
 <?php
 
 
-
+//parasyti funkcija kuri onclick atitinkama klase paimtu jos numeri ir iteptu i id laukeli
+//ar tai padaryti per js ar per php (tikriausiai per php) ne=inau
+//bet jau nedaug liko
 include '..\infoload.php';
 
 /** @var PDO $conn */
-$stmt=$conn->query('SELECT name, cont FROM  content WHERE id=1 ');
+$stmt=$conn->prepare("SELECT name, cont FROM  content WHERE id=:id" );
+$stmt->bindParam(':id', $var);
+$stmt->execute();
 $stmt->setFetchMode(PDO::FETCH_ASSOC);
 $result=$stmt->fetch();
 
 //var_dump($result);
 
-echo "<h1>".$result['name']."</h1><br>";
-echo "<p class='texty'>".$result['cont']."</p>"
 ?>
 
 <div class="menu-sveikata"> <section class="inmtxt">Atgal</section></div>
