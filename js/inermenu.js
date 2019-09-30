@@ -4,9 +4,9 @@ $(document).ready(function () {
     $(".inception>div").click(function () { /* only to chosen tags, this function will apply*/
         let file = this.className;
         //replace with html with modified divs name and make it a path
-        file = file.replace('menu-', 'menu/') + ".php";
+        file = file.replace('menu-', 'menu/');
         //load the god damn thing
-        $(".inception").load(file);
+        $(".inception").load('index.php?id='+file);
         console.log(file);
     })
 });
