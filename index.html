@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 
@@ -184,30 +185,87 @@
 
         </div>
         <br>
-        <hr>
+        <h2 class="">Galerija</h2>
+        <div class="gallery-image">
+            <div class="img-box">
+                <img src="glry/glryy%20(2).png" alt=""/>
+                <div class="transparent-box">
 
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="glry/glryy%20(2).jpg" alt=""/>
+                <div class="transparent-box">
+
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="glry/glryy%20(1).jpg" alt=""/>
+                <div class="transparent-box">
+
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="glry/glryy%20(1).png" alt=""/>
+                <div class="transparent-box">
+
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="glry/glryy%20(3).jpg" alt=""/>
+                <div class="transparent-box">
+
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="glry/glryy%20(4).jpg" alt=""/>
+                <div class="transparent-box">
+
+                </div>
+            </div>
+        </div>
+        <hr>
         <div class="contk1">
             <h1>Turite klausimų? Rašykite mums!</h1>
             <br>
             <div class="innercontk">
 
-                        </div>
-                    </div>
+
+                <div class="contkform">
+
+                    <h1>Susisiekite su mumis!</h1>
+                    <form class="kontaktas" action="emailer.php" method="post">
+                        <!--vardo kodas-->
+                        <label for="vard">Vardas:</label>
+                        <input name="vardas" type="text" id="vard" placeholder="Jūsų vardas.."/> <br>
+                        <!--Pavarde-->
+
+                        <label for="pav">El. pašto adresas: </label>
+                        <input name="email" type="text" id="pav" placeholder="pvz.: vardas@domenas.lt"/> <br>
+                        <!-- zinute man-->
+
+                        <label for="zinute">Žinutė:</label>
+                        <br>
+                        <textarea name="msg" rows="10" cols="50" id="zinute" placeholder="Jūsų žinutė čia.."></textarea>
+                        </br>
+                        <!--mygtukas-->
+                        <input value="Submit" type="button" class="sendbtn"/>
+
+                    </form>
+
+
                 </div>
 
-                    <div class="fb-page" data-href="https://www.facebook.com/INFONIMAS/" data-tabs="timeline"
-                         data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
-                         data-hide-cover="false" data-show-facepile="true">
-                        <blockquote cite="https://www.facebook.com/INFONIMAS/" class="fb-xfbml-parse-ignore"><a
-                                href="https://www.facebook.com/INFONIMAS/">INFONIMAS</a></blockquote>
-                    </div></div>
-                    <br>
-
-
-
+                <div class="fb-page" data-href="https://www.facebook.com/INFONIMAS/" data-tabs="timeline"
+                     data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+                     data-hide-cover="false" data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/INFONIMAS/" class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/INFONIMAS/">INFONIMAS</a></blockquote>
+                </div>
             </div>
-            <br>
         </div>
+
+        <br>
     </div>
     <div class="gra6"></div>
     <div class="gra7"></div>
@@ -222,7 +280,6 @@
 <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0&appId=133700819993662&autoLogAppEvents=1"></script>
 <script src="js/MScript.js"></script>
-<link rel="stylesheet" href="form.css" >
 </body>
 </html>
 

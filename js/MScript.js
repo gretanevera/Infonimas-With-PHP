@@ -28,102 +28,18 @@ $(document).ready(function () {
         }
     })
 });
+//
+function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";}
 
 
-// functional graveyard.... sorry mates, we doin efficiency now.
 
-//
-//
-//   $(document).ready(function () {
-//       $(".am").click(function () {
-//           var x = $(".am1").position(); //gets the position of the div element...
-//           window.scrollTo(x.left, x.top); //window.scrollTo() scrolls the page upto certain position....
-//           //it takes 2 parameters : (x axis cordinate, y axis cordinate);
-//       });
-//   });
-// $(document).ready(function () {
-//       $(".mok_ist").click(function () {
-//           var x = $(".mok_ist1").position(); //gets the position of the div element...
-//           window.scrollTo(x.left, x.top); //window.scrollTo() scrolls the page upto certain position....
-//           //it takes 2 parameters : (x axis cordinate, y axis cordinate);
-//       });
-//   });
-//
-//   $(document).ready(function () {
-//       $('.volunt').click(function () {
-//           var x = $('.volunt1').position(); //gets the position of the div element...
-//           window.scrollTo(x.left, x.top); //window.scrollTo() scrolls the page upto certain position....
-//           //it takes 2 parameters : (x axis cordinate, y axis cordinate);
-//       });
-//   });
-//   $(document).ready(function () {
-//       $('.contk').click(function () {
-//           var x = $('.contk1').position(); //gets the position of the div element...
-//           window.scrollTo(x.left, x.top); //window.scrollTo() scrolls the page upto certain position....
-//           //it takes 2 parameters : (x axis cordinate, y axis cordinate);
-//   });
-//       });
-//
-//
-//
-//
-//
-//
-
-
-// // Paslėpti linkus kol op < 0.5>
-// $(".sidenav").ready(function(){
-//     if ($('.sidenav').css('opacity') === 0) {
-//         $(".sidenav a").css({"pointer-events": "none"});
-//     }else {
-//         $(".sidenav a").css({"pointer-events": "visible"});
-//     }
-// });
-
-// // // slepiam menu bandymas 1
-// $('document').ready(function(){
-//     if ($('.sidenav').css('opacity') == 0 ) {
-//         $('.sidenav ').css({"z-index": "-2"});
-//     }else {
-//         $('.sidenav ').css({"z-index": "2"});
-//         // e.preventDefault()
-//     }
-// });
-
-// // // slepiam menu bandymas 1
-// $('document').ready(function(){
-//     while ($('.sidenav').css('opacity') === 1 ) {
-//         $('.sidenav a').css({"z-index": "2"});
-// }});
-//
-
-// //issiskleidimas Neviekia dar normaliai
-// $('.am').hover(
-//     function () {
-//         $(this).animate({
-//             width: '300px',
-//         },100)
-//         $('.txt').animate({
-//             width: '300px',
-//         },100)
-//     },
-//     //animacijos greitis
-//     function () {
-//         $(this).animate({
-//             width: '20px',
-//         },100)
-//         $('.txt').animate({
-//             width: '4px',
-//         },100)
-//
-//     }
-// );
-// //Slepiam linkus Antras bandymas
-// $(document).ready(function(){
-//     if ($(".sidenav").css('opacity') === 1 ) {
-//         $('.sidenav a').css({"visibility": "visible"});
-//     }else {
-//         $('.sidenav a').css({"visibility": "hidden"});
-//         // e.preventDefault()
-//     }
-// });
