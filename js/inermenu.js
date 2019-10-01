@@ -6,7 +6,7 @@ $(document).ready(function () {
         //replace with html with modified divs name and make it a path
         file = file.replace('menu-', 'menu/');
         //load the god damn thing
-        $(".inception").load('index.php?id='+file);
+        $(".inception").load('index1.php?id='+file);
         console.log(file);
     })
 });
